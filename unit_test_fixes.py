@@ -5,7 +5,7 @@ Tests the settings validation and format handling without API calls.
 """
 
 import sys
-sys.path.insert(0, '/home/adminho/dxfgen')
+sys.path.insert(0, '/home/user/dxfgen')
 
 from backend.settings import UserSettings, SettingsManager, VALID_QUALITY_LEVELS
 

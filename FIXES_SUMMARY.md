@@ -66,7 +66,7 @@ msp.add_text(text, dxfattribs={
 - `test_api_workflow.py`: End-to-end API workflow test
 
 ### Generated Test Files
-All test files successfully generated in `/home/adminho/dxfgen/output/`:
+All test files successfully generated in `/home/user/dxfgen/output/`:
 - test_all_geometries.dxf (18K)
 - test_lines.dxf (16K)
 - test_circles.dxf (16K)

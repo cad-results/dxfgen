@@ -97,7 +97,7 @@ All planned features have been successfully implemented and the system is fully 
 
 ```bash
 # Ensure environment is set up
-cd /home/adminho/dxfgen
+cd /home/user/dxfgen
 
 # Set OpenAI API key in .env file
 echo "OPENAI_API_KEY=your_key_here" > .env
@@ -377,7 +377,7 @@ Verify:
 ## 📁 FILE STRUCTURE SUMMARY
 
 ```
-/home/adminho/dxfgen/
+/home/user/dxfgen/
 ├── backend/
 │   ├── agents/
 │   │   ├── __init__.py (✅ Updated - exports all agents)

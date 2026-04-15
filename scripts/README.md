@@ -9,7 +9,7 @@ Interactive viewers and utilities for DXF CAD files, optimized for WSL2 environm
 ### Start the Server
 
 ```bash
-cd /home/adminho/dxfgen
+cd /home/user/dxfgen
 
 # Option 1: Direct Python
 python -m backend.server
@@ -42,7 +42,7 @@ View DXF files with interactive pan/zoom capabilities.
 ### Usage
 
 ```bash
-cd /home/adminho/dxfgen/scripts
+cd /home/user/dxfgen/scripts
 
 # View a single DXF file
 ./run_dxf_viewer.sh ../output/square.dxf
@@ -60,7 +60,7 @@ cd /home/adminho/dxfgen/scripts
 Generate and view sample DXF drawings:
 
 ```bash
-cd /home/adminho/dxfgen
+cd /home/user/dxfgen
 
 # 1. Square (100mm sides)
 python test_workflow.py "Draw a square 100mm on each side"
@@ -107,7 +107,7 @@ View GLB, PLY, OBJ, STL files with part segmentation overlays.
 ### Usage
 
 ```bash
-cd /home/adminho/dxfgen/scripts
+cd /home/user/dxfgen/scripts
 
 # View a 3D mesh file
 ./run_viewer.sh model.glb
@@ -194,10 +194,10 @@ curl -X POST http://localhost:5000/api/chat \
 
 | Item | Path |
 |------|------|
-| Generated DXF files | `/home/adminho/dxfgen/output/` |
-| Sample DXF files | `/home/adminho/dxfgen/backend/text_to_dxf/samples/` |
-| Server | `/home/adminho/dxfgen/backend/server.py` |
-| Test scripts | `/home/adminho/dxfgen/test_workflow.py`, `api_example.py` |
+| Generated DXF files | `/home/user/dxfgen/output/` |
+| Sample DXF files | `/home/user/dxfgen/backend/text_to_dxf/samples/` |
+| Server | `/home/user/dxfgen/backend/server.py` |
+| Test scripts | `/home/user/dxfgen/test_workflow.py`, `api_example.py` |
 
 ---
 
