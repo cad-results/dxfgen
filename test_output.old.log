@@ -1,0 +1,410 @@
+DXF API Automated Testing
+Press Ctrl+C to stop
+
+Waiting for server to start...
+✓ Server is healthy
+  OpenAI configured: True
+
+============================================================
+Test Iteration 1
+============================================================
+Sending request: build a big house
+Session ID: test_session_1
+Status Code: 500
+✗ FAILED
+Error: 'Input to ChatPromptTemplate is missing variables {\'"num_bedrooms"\'}.  Expected: [\'"num_bedrooms"\', \'max_passes\', \'pass_number\', \'previous_refinement\', \'user_input\'] Received: [\'user_input\', \'pass_number\', \'max_passes\', \'previous_refinement\']\nNote: if you intended {"num_bedrooms"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{"num_bedrooms"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+
+Stats: 0 successes, 1 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 2
+============================================================
+Sending request: build a big house
+Session ID: test_session_2
+Status Code: 500
+✗ FAILED
+Error: 'Input to ChatPromptTemplate is missing variables {\'"num_bedrooms"\'}.  Expected: [\'"num_bedrooms"\', \'max_passes\', \'pass_number\', \'previous_refinement\', \'user_input\'] Received: [\'user_input\', \'pass_number\', \'max_passes\', \'previous_refinement\']\nNote: if you intended {"num_bedrooms"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{"num_bedrooms"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+
+Stats: 0 successes, 2 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 3
+============================================================
+Sending request: build a big house
+Session ID: test_session_3
+Status Code: 500
+✗ FAILED
+Error: 'Input to ChatPromptTemplate is missing variables {\'"num_bedrooms"\'}.  Expected: [\'"num_bedrooms"\', \'max_passes\', \'pass_number\', \'previous_refinement\', \'user_input\'] Received: [\'user_input\', \'pass_number\', \'max_passes\', \'previous_refinement\']\nNote: if you intended {"num_bedrooms"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{"num_bedrooms"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+
+Stats: 0 successes, 3 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 4
+============================================================
+Sending request: build a big house
+Session ID: test_session_4
+Status Code: 500
+✗ FAILED
+Error: 'Input to ChatPromptTemplate is missing variables {\'"num_bedrooms"\'}.  Expected: [\'"num_bedrooms"\', \'max_passes\', \'pass_number\', \'previous_refinement\', \'user_input\'] Received: [\'user_input\', \'pass_number\', \'max_passes\', \'previous_refinement\']\nNote: if you intended {"num_bedrooms"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{"num_bedrooms"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+
+Stats: 0 successes, 4 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 5
+============================================================
+Sending request: build a big house
+Session ID: test_session_5
+Status Code: 500
+✗ FAILED
+Error: 'Input to ChatPromptTemplate is missing variables {\'"num_bedrooms"\'}.  Expected: [\'"num_bedrooms"\', \'max_passes\', \'pass_number\', \'previous_refinement\', \'user_input\'] Received: [\'user_input\', \'pass_number\', \'max_passes\', \'previous_refinement\']\nNote: if you intended {"num_bedrooms"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{"num_bedrooms"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+
+Stats: 0 successes, 5 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 6
+============================================================
+Sending request: build a big house
+Session ID: test_session_6
+Status Code: 500
+✗ FAILED
+Error: Error code: 400 - {'error': {'message': "Invalid schema for response_format 'RefinedSpecification': In context=('properties', 'suggested_defaults'), 'additionalProperties' is required to be supplied and to be false.", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}
+
+Stats: 0 successes, 6 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 7
+============================================================
+Sending request: build a big house
+Session ID: test_session_7
+Status Code: 500
+✗ FAILED
+Error: Error code: 400 - {'error': {'message': "Invalid schema for response_format 'RefinedSpecification': In context=('properties', 'suggested_defaults'), 'additionalProperties' is required to be supplied and to be false.", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}
+
+Stats: 0 successes, 7 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 8
+============================================================
+Sending request: build a big house
+Session ID: test_session_8
+Status Code: 500
+✗ FAILED
+Error: Error code: 400 - {'error': {'message': "Invalid schema for response_format 'RefinedSpecification': In context=('properties', 'suggested_defaults'), 'additionalProperties' is required to be supplied and to be false.", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}
+
+Stats: 0 successes, 8 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 9
+============================================================
+Sending request: build a big house
+Session ID: test_session_9
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 9 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 10
+============================================================
+Sending request: build a big house
+Session ID: test_session_10
+Status Code: 500
+✗ FAILED
+Error: Error code: 400 - {'error': {'message': "Invalid schema for response_format 'RefinedSpecification': In context=(), 'required' is required to be supplied and to be an array including every key in properties. Extra required key 'suggested_defaults' supplied.", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}
+
+Stats: 0 successes, 10 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 11
+============================================================
+Sending request: build a big house
+Session ID: test_session_11
+Status Code: 500
+✗ FAILED
+Error: Error code: 400 - {'error': {'message': "Invalid schema for response_format 'RefinedSpecification': In context=(), 'required' is required to be supplied and to be an array including every key in properties. Extra required key 'suggested_defaults' supplied.", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}
+
+Stats: 0 successes, 11 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 12
+============================================================
+Sending request: build a big house
+Session ID: test_session_12
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 12 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 13
+============================================================
+Sending request: build a big house
+Session ID: test_session_13
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 13 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 14
+============================================================
+Sending request: build a big house
+Session ID: test_session_14
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 14 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 15
+============================================================
+Sending request: build a big house
+Session ID: test_session_15
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 15 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 16
+============================================================
+Sending request: build a big house
+Session ID: test_session_16
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 16 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 17
+============================================================
+Sending request: build a big house
+Session ID: test_session_17
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 17 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 18
+============================================================
+Sending request: build a big house
+Session ID: test_session_18
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 18 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 19
+============================================================
+Sending request: build a big house
+Session ID: test_session_19
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 19 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 20
+============================================================
+Sending request: build a big house
+Session ID: test_session_20
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 20 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 21
+============================================================
+Sending request: build a big house
+Session ID: test_session_21
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 21 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 22
+============================================================
+Sending request: build a big house
+Session ID: test_session_22
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 22 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 23
+============================================================
+Sending request: build a big house
+Session ID: test_session_23
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 23 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 24
+============================================================
+Sending request: build a big house
+Session ID: test_session_24
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 24 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 25
+============================================================
+Sending request: build a big house
+Session ID: test_session_25
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 25 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 26
+============================================================
+Sending request: build a big house
+Session ID: test_session_26
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 26 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 27
+============================================================
+Sending request: build a big house
+Session ID: test_session_27
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 27 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 28
+============================================================
+Sending request: build a big house
+Session ID: test_session_28
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 28 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 29
+============================================================
+Sending request: build a big house
+Session ID: test_session_29
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 29 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 30
+============================================================
+Sending request: build a big house
+Session ID: test_session_30
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 30 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 31
+============================================================
+Sending request: build a big house
+Session ID: test_session_31
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 31 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 32
+============================================================
+Sending request: build a big house
+Session ID: test_session_32
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 32 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 33
+============================================================
+Sending request: build a big house
+Session ID: test_session_33
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 33 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 34
+============================================================
+Sending request: build a big house
+Session ID: test_session_34
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 34 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 35
+============================================================
+Sending request: build a big house
+Session ID: test_session_35
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 35 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 36
+============================================================
+Sending request: build a big house
+Session ID: test_session_36
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 36 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 37
+============================================================
+Sending request: build a big house
+Session ID: test_session_37
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 37 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 38
+============================================================
+Sending request: build a big house
+Session ID: test_session_38
+✗ CONNECTION ERROR - Server not running?
+
+Stats: 0 successes, 38 failures
+Waiting 5 seconds before next test...
+
+============================================================
+Test Iteration 39
+============================================================

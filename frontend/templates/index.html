@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXF Generator Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DXF Generator Chatbot</h1>
+            <p class="subtitle">Describe what you want to draw, and I'll generate a DXF file for you</p>
+            <button id="settings-toggle" class="settings-toggle-btn">⚙️ Settings</button>
+        </header>
+
+        <div id="settings-panel" class="settings-panel" style="display: none;">
+            <h3>Generation Settings</h3>
+
+            <div class="setting-group">
+                <label class="setting-label">
+                    <input type="checkbox" id="auto-accept-mode" />
+                    <strong>Auto-accept validation fixes</strong> (Zero user questions)
+                </label>
+                <p class="setting-description">
+                    When enabled, the system automatically fixes common issues like duplicate points, scale problems,
+                    and layer assignments without asking. Disable to review each refinement step.
+                </p>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label">
+                    <input type="checkbox" id="include-furniture" />
+                    <strong>Include furniture</strong> in floor plans
+                </label>
+                <p class="setting-description">
+                    Show furniture layout in architectural floor plans (beds, tables, chairs, etc.)
+                </p>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label">
+                    <input type="checkbox" id="include-annotations" checked />
+                    <strong>Include annotations</strong> (labels, dimensions)
+                </label>
+                <p class="setting-description">
+                    Add room labels, dimensions, and other annotations to the drawing
+                </p>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label" for="quality-level">
+                    <strong>Quality Level:</strong>
+                </label>
+                <select id="quality-level">
+                    <option value="draft">Draft</option>
+                    <option value="standard">Standard</option>
+                    <option value="professional" selected>Professional</option>
+                </select>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label" for="refinement-passes">
+                    <strong>Refinement Passes:</strong> <span id="refinement-value">3</span>
+                </label>
+                <input type="range" id="refinement-passes" min="1" max="10" value="3" />
+                <p class="setting-description">
+                    Number of recursive refinement passes for vague queries (2-3 recommended)
+                </p>
+            </div>
+
+            <div class="button-group">
+                <button id="save-settings-btn" class="btn-primary">Save Settings</button>
+                <button id="reset-settings-btn" class="btn-secondary">Reset to Defaults</button>
+            </div>
+
+            <div id="settings-status" class="settings-status" style="display: none;"></div>
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        <p>Hello! I'm your DXF generation assistant. I can help you create CAD drawings from natural language descriptions.</p>
+                        <p>Try describing shapes like:</p>
+                        <ul>
+                            <li>"Draw a rectangle 100x50mm with a circle of radius 20mm in the center"</li>
+                            <li>"Create a floor plan with a 5m x 4m room and a door"</li>
+                            <li>"Draw three concentric circles with radii 10, 20, and 30mm"</li>
+                        </ul>
+                        <p>What would you like to draw?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <textarea
+                    id="user-input"
+                    placeholder="Describe what you want to draw..."
+                    rows="3"
+                ></textarea>
+                <div class="button-group">
+                    <button id="send-btn" class="btn-primary">Send</button>
+                    <button id="continue-btn" class="btn-secondary" style="display: none;">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="metadata-panel" class="metadata-panel" style="display: none;">
+            <h3>Generated Metadata</h3>
+            <pre id="metadata-content"></pre>
+
+            <div class="format-toggles-container">
+                <h4>Output Formats</h4>
+                <div id="format-toggles" class="format-toggles">
+                    <!-- Format toggles will be dynamically generated -->
+                    <div class="format-category" data-category="source">
+                        <div class="category-header">Source (always included)</div>
+                        <div class="format-toggle disabled">
+                            <input type="checkbox" id="fmt-DXF" value="DXF" checked disabled>
+                            <label for="fmt-DXF">
+                                <span class="format-name">DXF</span>
+                                <span class="format-desc">AutoCAD Drawing Exchange</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="format-category" data-category="3d_cad">
+                        <div class="category-header">3D CAD Formats</div>
+                        <div class="format-grid" id="formats-3d-cad">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <div class="format-category" data-category="2d_export">
+                        <div class="category-header">2D Export Formats</div>
+                        <div class="format-grid" id="formats-2d-export">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <div class="format-category" data-category="dwg">
+                        <div class="category-header">DWG Format</div>
+                        <div class="format-grid" id="formats-dwg">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="preview-btn" class="btn-preview">Preview 2D</button>
+                <button id="generate-btn" class="btn-success">Generate Files</button>
+                <button id="edit-btn" class="btn-secondary">Edit Metadata</button>
+            </div>
+        </div>
+
+        <div id="download-panel" class="download-panel" style="display: none;">
+            <div class="success-message">
+                <h3 id="download-panel-title">Files Generated Successfully!</h3>
+                <div id="download-list" class="download-list">
+                    <!-- Download items will be dynamically generated -->
+                </div>
+                <div class="button-group download-buttons">
+                    <button id="download-all-btn" class="btn-success" style="display: none;">Download All as ZIP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>Processing...</p>
+    </div>
+
+    <!-- 2D Viewer Modal -->
+    <div id="viewer-2d-modal" class="modal-2d" style="display: none;">
+        <div class="modal-2d-content">
+            <div class="modal-2d-header">
+                <span id="viewer-2d-title">2D Viewer</span>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div id="viewer-2d-container" class="viewer-2d-container"></div>
+            <div class="viewer-2d-controls">
+                <button id="zoom-in-2d" class="btn-control" title="Zoom In">+</button>
+                <button id="zoom-out-2d" class="btn-control" title="Zoom Out">-</button>
+                <button id="reset-view-2d" class="btn-control" title="Reset View">Reset</button>
+                <button id="open-external-2d" class="btn-control btn-external" title="Open in external viewer">External</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

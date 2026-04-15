@@ -1,0 +1,222 @@
+text_to_dxf README:
+--------------------------
+
+This software converts the specifications to draw figures including lines, 
+circles and arcs into .dxf format. You just need to specify co-ordinates 
+of points and some parameters like radius, angles etc and the program will
+automatically draw the figure and generate the dxf file. You can use 
+combination of points to draw many type of figures such as triangle, 
+quadrilateral, polygon etc. Also you can draw as many figures as you want 
+using only one input file.   
+ Please see section "Input File Format" below for input file specification. 
+If you export spreadsheet as input file then use "Enter" (Newline) as line
+separator. Lines in input file which do not have valid (numeric) data at 
+required columns would be skipped while processing.   
+
+NOTE:   Data is required at all columns. But you can skip the figure 
+        description rows. On skipping, line will be taken as the default
+        type.
+
+
+
+REQUIREMENTS:
+----------------------------
+
+This software is totally written in Python. So Python interpretor should be
+installed correctly in your system. Make sure that python binary is in your
+system path (to be accessed easily). 
+
+This software also uses ezdxf library. To install it, run 
+`pip install ezdxf` or install from [here](https://pypi.python.org/pypi/ezdxf#installation).
+
+To test the output of this software any CAD software compatible with dxf 
+format should be installed such as LibreCAD, AutoCAD, QCAD etc.
+
+
+
+INPUT FILE FORMAT:
+----------------------------
+
+Your input text file should be written in following way. Optional lines are 
+surrounded by square brackets ([]). Also here comma (,) is taken as column 
+delimiter for demonstration. In practice you can use any column delimiter
+of your choice.
+
+############### Start of file ###############  
+[type of figure,Figure-1 description,show figure code,layer name]  
+point-1 co-ordinates  
+point-2 co-ordinates  
+point-3 co-ordinates  
+.  
+.  
+.  
+point-n co-ordinates  
+  
+[type of figure,Figure-2 description,show figure code,layer name]  
+point-1 co-ordinates  
+point-2 co-ordinates  
+point-3 co-ordinates  
+.  
+.  
+.  
+point-n co-ordinates  
+
+.  
+.  
+.  
+.  
+
+[type of figure,Figure-n description,show figure code,layer name]  
+point-1 co-ordinates  
+point-2 co-ordinates  
+point-3 co-ordinates  
+.  
+.  
+.  
+point-n co-ordinates  
+############### End of File ###############  
+  
+Details:  
+
+Here,  
+type of figure -  
+L to draw lines between provided coordinates  
+C to draw circles with provided coordinates  
+A to draw arcs with provided coordinates  
+P to draw polyline with provided coordinates
+H to draw hatch with provided coordinates  
+
+Figure description -  
+text shown at botton of figure.  
+Text drawn is bottom centric to the point whose x co-ordinate is mean of 
+largest and smallest x co-ordinates and y co-ordinate is the smallest 
+y co-ordinate - txt_sp (defined in data file) of points constituting the figure.
+
+show figure code -  
+1 to show (draw) figure and optional text  
+0 to hide (don't draw) figure and optional text
+
+layer name -  
+Name of layer on which figure and its optional text is drawn. Currently 
+5 layers are defined inside the program. So, you can use any value between 0-5.
+
+point co-ordinates -  
+co-ordinates of point separated by column delimiter
+(comma in above case). You can specify co-ordinates
+in any order i.e x,y,z or y,x,z etc. But sequence should
+be same for all figures. Also you need to mention 
+the co-ordinates order in the data_file.py. Please
+note that z co-ordinate is not used in the program
+so you can give only x and y co-ordinates.  
+
+- In case of 'L' type (line), format is x,y where  
+x: x-coordinate of the point  
+y: y-coordinate of the point  
+
+- In case of 'C' type (circle), format is x,y,r where  
+x: x-coordinate of center of circle  
+y: y-coordinate of center of circle  
+r: radius of circle  
+
+- In case of 'A' type (arc), format is x,y,r,sa,ea where  
+x: x-coordinate of center of circle  
+y: y-coordinate of center of circle  
+r: radius of circle  
+sa: starting angle of arc  
+ea: ending angle of arc  
+
+- In case of 'P' type (polyline), format is x,y,sw,ew,bulge where  
+x: x-coordinate of the point in polyline  
+y: y-coordinate of the point in polyline  
+sw: start width of the line starting from this point  
+ew: end width of the line starting from this point  
+bulge: arc from this point to next point having diameter = length_of_line * bulge 
+(positive for downward and negative for upward)  
+
+- In case of 'H' type (hatch in polyline), format is x,y,bulge where  
+x: x-coordinate of the point in polyline  
+y: y-coordinate of the point in polyline  
+bulge: arc from this point to next point having diameter = length_of_line * bulge 
+(positive for downward and negative for upward)                     
+
+Note:   Figure specifications need to be separated by Empty line.
+
+Note:   See samples folder for sample files. You will find python
+        scripts to generate coordinates, text files containing co-ordinates
+        and dxf files showing output of these samples. Redirect output of python
+        script to file and use that file as input to this program.  
+
+
+
+USAGE:
+----------------------------
+
+Extract the package files then cd to extracted directory. Then to run 
+the script you can use any one of following commands:
+
+              #python text_to_dxf.py <inputfile> <outputfile>
+                       OR
+              #./text_to_dxf.py <inputfile> <outputfile>
+
+Here, <inputfile> is the source .csv (text file) and <outputfile> is 
+resultant .dxf file to be generated. Change the values of various variables
+defined in data_file.py file according to your requirement.
+
+
+NOTE:    Be sure that you must have write permission in the directory
+         where outputfile is to be generated.
+
+Enjoy.......Have Fun.!!
+
+
+
+MULTI-FORMAT EXPORT (Mayo Integration):
+----------------------------
+
+The DXF files generated by text_to_dxf can be automatically converted to
+other CAD and 3D formats using the integrated Mayo converter. This is
+handled by the parent dxfgen application.
+
+Supported export formats:
+- STEP (.step, .stp) - CAD/CAM interchange, manufacturing
+- IGES (.iges, .igs) - Legacy CAD systems
+- STL (.stl) - 3D printing, rapid prototyping
+- OBJ (.obj) - 3D modeling, game engines
+- PLY (.ply) - Point clouds, 3D scanning
+- GLTF (.gltf, .glb) - Web 3D, AR/VR applications
+- OFF (.off) - Mesh processing
+- VRML (.vrml, .wrl) - Virtual reality
+
+The conversion is performed by mayo-conv, which uses OpenCASCADE for
+high-fidelity format translation.
+
+Example workflow:
+1. text_to_dxf generates a .dxf file from CSV metadata
+2. Mayo converter reads the DXF file
+3. Converts to the requested format (e.g., STEP for CNC machining)
+4. Both DXF and converted file are available for download
+
+3D Visualization:
+For mesh formats (OBJ, PLY, STL, GLTF, OFF), an interactive 3D viewer
+is available. The viewer supports:
+- Interactive rotation and zoom
+- Multiple view modes
+- Screenshot capture
+- WSL2/X11 display support
+
+See the main dxfgen README for full documentation on multi-format export
+and 3D visualization features.
+
+
+
+AUTHORS:
+----------------------------
+
+Vikas Mahajan
+Website: http://vikasmahajan.wordpress.com
+Email: vikas.mahajan12@gmail.com
+
+Abhay Yadav
+Website: https://everydayabhay.wordpress.com
+Email: abhayyadav000@gmail.com  
+

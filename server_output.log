@@ -1,0 +1,162 @@
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Serving Flask app 'server'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.243.178:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+127.0.0.1 - - [10/Nov/2025 14:01:50] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:02:41] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:02:48] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:03:54] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:05:08] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:05:09] "[31m[1mPOST /api/health HTTP/1.1[0m" 405 -
+127.0.0.1 - - [10/Nov/2025 14:05:13] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:05:14] "POST /api/chat HTTP/1.1" 200 -
+ * Detected change in '/home/adminho/dxfgen/test_auto.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+127.0.0.1 - - [10/Nov/2025 14:06:04] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:08:27] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:09:23] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:10:42] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:11:36] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:12:39] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:14:25] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:18:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:18:49] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:18:49] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:18:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Nov/2025 14:20:52] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:22:48] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 14:25:01] "POST /api/chat HTTP/1.1" 200 -
+ * Detected change in '/home/adminho/dxfgen/backend/agents/auto_validator.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/agents/auto_validator.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/agents/__init__.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/graph/dxf_workflow.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/graph/dxf_workflow.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/graph/dxf_workflow.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/graph/dxf_workflow.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/graph/dxf_workflow.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/graph/dxf_workflow.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+127.0.0.1 - - [10/Nov/2025 15:10:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:10:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:10:02] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:11:30] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:15:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:15:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:15:24] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:16:10] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:17:28] "POST /api/settings HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/adminho/dxfgen/backend/server.py", line 93, in chat
+    result = wf.continue_with_feedback(previous_state, user_message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminho/dxfgen/backend/graph/dxf_workflow.py", line 478, in continue_with_feedback
+    parsed_feedback = self.feedback_parser.parse(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminho/dxfgen/backend/agents/feedback_parser.py", line 189, in parse
+    result = chain.invoke({
+             ^^^^^^^^^^^^^^
+  File "/home/adminho/miniconda3/envs/dxfgen/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3088, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminho/miniconda3/envs/dxfgen/lib/python3.11/site-packages/langchain_core/prompts/base.py", line 211, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminho/miniconda3/envs/dxfgen/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 2021, in _call_with_config
+    context.run(
+  File "/home/adminho/miniconda3/envs/dxfgen/lib/python3.11/site-packages/langchain_core/runnables/config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminho/miniconda3/envs/dxfgen/lib/python3.11/site-packages/langchain_core/prompts/base.py", line 184, in _format_prompt_with_error_handling
+    inner_input_ = self._validate_input(inner_input)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminho/miniconda3/envs/dxfgen/lib/python3.11/site-packages/langchain_core/prompts/base.py", line 178, in _validate_input
+    raise KeyError(
+KeyError: "Input to ChatPromptTemplate is missing variables {'\\n      action_type'}.  Expected: ['\\n      action_type', 'entities_summary', 'feedback', 'validation_issues'] Received: ['feedback', 'validation_issues', 'entities_summary']\nNote: if you intended {\n      action_type} to be part of the string and not a variable, please escape it with double curly braces like: '{{\n      action_type}}'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT "
+127.0.0.1 - - [10/Nov/2025 15:17:47] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+127.0.0.1 - - [10/Nov/2025 15:19:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:19:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:19:11] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:19:16] "POST /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:20:16] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:25:14] "POST /api/generate HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:25:25] "GET /api/download/drawing_1762806313.dxf HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:30:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:30:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:30:53] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Nov/2025 15:30:58] "POST /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [10/Nov/2025 15:32:03] "POST /api/chat HTTP/1.1" 200 -
+ * Detected change in '/home/adminho/dxfgen/backend/text_to_dxf/include/file_close.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/text_to_dxf/include/file_close.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/text_to_dxf/include/file_close.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/text_to_dxf/include/file_close.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/agents/metadata_formatter.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521
+ * Detected change in '/home/adminho/dxfgen/backend/agents/metadata_formatter.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5000
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 825-362-521

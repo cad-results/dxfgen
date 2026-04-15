@@ -1,0 +1,81 @@
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Serving Flask app 'server'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.26.243.178:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
+127.0.0.1 - - [02/Feb/2026 11:27:52] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:17] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:17] "GET /api/formats HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:21] "GET /api/viewer/status HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:21] "GET /api/settings?session_id=test123 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:21] "POST /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:21] "POST /api/settings/reset HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:21] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
+127.0.0.1 - - [02/Feb/2026 11:28:21] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
+127.0.0.1 - - [02/Feb/2026 11:28:32] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:28:41] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:29:11] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:31:23] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:31:28] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:31:38] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:31:47] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:32:02] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:32:20] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:32:33] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:32:44] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:32:55] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:33:14] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:33:28] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:35:18] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:35:18] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
+127.0.0.1 - - [02/Feb/2026 11:35:18] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
+Traceback (most recent call last):
+  File "/home/adminho/dxfgen/backend/server.py", line 95, in chat
+    user_message = data.get('message', '').strip()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+127.0.0.1 - - [02/Feb/2026 11:35:18] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+127.0.0.1 - - [02/Feb/2026 11:35:18] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
+127.0.0.1 - - [02/Feb/2026 11:35:39] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:35:51] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:36:10] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:36:24] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:36:45] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:37:02] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2026 11:37:29] "POST /api/chat HTTP/1.1" 200 -
+ * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
+ * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
+ * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
+ * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
+ * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
+ * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+Starting DXF Generator Chatbot on http://localhost:5001
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 747-812-485
