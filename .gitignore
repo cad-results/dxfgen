@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.py[cod]
+*.egg-info/
+
+# Environment secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+CLAUDE.md

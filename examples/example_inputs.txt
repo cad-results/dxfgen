@@ -1,0 +1,130 @@
+# Example Drawing Descriptions for DXF Generator Chatbot
+
+## Simple Shapes
+
+1. Draw a square 50mm on each side centered at origin
+
+2. Create a circle with radius 30mm at coordinates (0, 0)
+
+3. Draw an equilateral triangle with 60mm sides
+
+4. Create a rectangle 120mm x 80mm
+
+## Geometric Patterns
+
+5. Draw three concentric circles with radii 20mm, 40mm, and 60mm
+
+6. Create a grid of 4x4 squares, each 25mm on a side
+
+7. Draw a star shape with 5 points, outer radius 50mm
+
+8. Create a hexagon with 40mm sides
+
+## Composite Shapes
+
+9. Draw a rectangle 100mm x 60mm with a 20mm radius circle at each corner
+
+10. Create a house shape: rectangle base 100mm x 80mm with triangular roof
+
+11. Draw a mechanical flange: 100mm diameter circle with four 10mm diameter mounting holes
+
+12. Create a simple bracket: L-shape with 80mm x 80mm legs and 10mm thickness
+
+## Mechanical Drawings
+
+13. Draw a bolt circle: 80mm diameter with 6 equally spaced 8mm holes
+
+14. Create a simple gasket: 100mm outer diameter, 60mm inner diameter circle
+
+15. Draw a rectangular plate 150mm x 100mm with four corner mounting holes 10mm diameter, 10mm from edges
+
+16. Create a simple pulley: two concentric circles, outer 80mm diameter, inner 20mm diameter
+
+## Architectural Elements
+
+17. Draw a simple door opening: 900mm x 2100mm rectangle with door swing arc
+
+18. Create a window: 1200mm x 1200mm square with cross dividers
+
+19. Draw a simple room: 4000mm x 3000mm rectangle with door opening
+
+20. Create a staircase symbol: 1000mm length with 10 steps
+
+## Advanced Patterns
+
+21. Draw a gear tooth profile with 8 teeth around a 60mm diameter circle
+
+22. Create a Celtic knot pattern in a 100mm square
+
+23. Draw a mandala pattern with 8-fold symmetry in a 100mm circle
+
+24. Create a honeycomb pattern of hexagons, each 20mm wide, in a 100mm x 100mm area
+
+## Text Placeholders
+
+25. Draw a title block: 180mm x 50mm rectangle with subdivisions for title, date, and drawing number
+
+26. Create a dimension line with arrows: 100mm horizontal line with arrows at each end
+
+27. Draw a section marker: 30mm circle with cross-hairs
+
+28. Create a revision cloud shape around a 50mm x 50mm area
+
+## Utility Symbols
+
+29. Draw an electrical outlet symbol: circle 20mm diameter with two parallel lines
+
+30. Create a plumbing fixture symbol: rectangular 600mm x 400mm with circular drain 50mm diameter
+
+## Combined Elements
+
+31. Draw a technical drawing layout: A4 sheet (297mm x 210mm) with title block and border
+
+32. Create a part drawing: 100mm x 80mm rectangle with center hole 30mm diameter and four corner fillets radius 10mm
+
+33. Draw a cross-section indicator: circle 20mm diameter with arrow pointing to cutting plane line 100mm long
+
+34. Create an assembly view: three rectangles 50mm x 30mm arranged in a row with 10mm spacing between them
+
+## Precision Patterns
+
+35. Draw a measurement scale: 100mm line with 10mm graduations
+
+36. Create a protractor: 180 degree arc, 80mm radius, with 10 degree markings
+
+37. Draw a target pattern: five concentric circles with radii 10, 20, 30, 40, 50mm with cross-hairs
+
+38. Create a grid reference: 100mm x 100mm square with 10mm x 10mm grid
+
+## Custom Examples
+
+39. Draw a simple logo: circle 60mm diameter with inscribed equilateral triangle
+
+40. Create a decorative border: 200mm x 150mm rectangle with wavy line pattern inside
+
+---
+
+## Tips for Writing Descriptions
+
+- Be specific about dimensions and units
+- Mention coordinate positions when important
+- Describe spatial relationships clearly
+- Specify entity types when possible (lines, circles, arcs, etc.)
+- Include layer information if needed
+- Mention any special requirements (closed polylines, hatch patterns, etc.)
+
+## Supported Entities
+
+- **Lines (L)**: Straight line segments
+- **Circles (C)**: Complete circles
+- **Arcs (A)**: Circular arcs with start and end angles
+- **Polylines (P)**: Connected line segments
+- **Hatches (H)**: Filled regions
+
+## Coordinate System
+
+- Origin (0, 0) is typically at the center or bottom-left
+- X-axis runs horizontally (positive to the right)
+- Y-axis runs vertically (positive upward)
+- Angles are measured counter-clockwise from positive X-axis
+- Units default to millimeters unless specified

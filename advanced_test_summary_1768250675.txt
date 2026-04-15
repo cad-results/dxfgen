@@ -1,0 +1,19 @@
+DXF Generator Advanced Test Summary
+==================================================
+
+Total: 12 | Passed: 12 | Failed: 0
+Pass rate: 100.0%
+Total time: 1735.22s
+
+[PASS] Detailed Warehouse with Conflicts (151.75s)
+[PASS] Precision Gearbox Assembly (162.27s)
+[PASS] Impossible Floor Plan (278.16s)
+[PASS] Industrial Piping Network (80.62s)
+[PASS] Modular Space Station (169.19s)
+[PASS] Gothic Cathedral Floor Plan (182.99s)
+[PASS] Precision Electronics Enclosure (161.15s)
+[PASS] Hydraulic Press Circuit (103.97s)
+[PASS] Complex Land Survey Plot (91.08s)
+[PASS] Geometry Edge Cases (147.17s)
+[PASS] Multi-Scale Airport Layout (109.08s)
+[PASS] Fractal Antenna Pattern (97.81s)
