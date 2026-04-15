@@ -19,7 +19,7 @@ Get up and running with DXF Generator Chatbot in 5 minutes!
 ### 2. Configure the Project
 
 ```bash
-cd /home/adminho/dxfgen
+cd /home/user/dxfgen
 
 # Copy environment template
 cp .env.example .env
@@ -154,7 +154,7 @@ git clone https://github.com/GreatDevelopers/text_to_dxf.git backend/text_to_dxf
 
 Generated DXF files are saved in:
 ```
-/home/adminho/dxfgen/output/
+/home/user/dxfgen/output/
 ```
 
 ## Example Drawing Ideas

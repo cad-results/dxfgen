@@ -36,7 +36,7 @@ Starting DXF Generator Chatbot on http://localhost:5001
 127.0.0.1 - - [02/Feb/2026 11:35:18] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
 127.0.0.1 - - [02/Feb/2026 11:35:18] "[31m[1mPOST /api/chat HTTP/1.1[0m" 400 -
 Traceback (most recent call last):
-  File "/home/adminho/dxfgen/backend/server.py", line 95, in chat
+  File "/home/user/dxfgen/backend/server.py", line 95, in chat
     user_message = data.get('message', '').strip()
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'strip'
@@ -49,32 +49,32 @@ AttributeError: 'NoneType' object has no attribute 'strip'
 127.0.0.1 - - [02/Feb/2026 11:36:45] "POST /api/chat HTTP/1.1" 200 -
 127.0.0.1 - - [02/Feb/2026 11:37:02] "POST /api/chat HTTP/1.1" 200 -
 127.0.0.1 - - [02/Feb/2026 11:37:29] "POST /api/chat HTTP/1.1" 200 -
- * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+ * Detected change in '/home/user/dxfgen/backend/server.py', reloading
 Starting DXF Generator Chatbot on http://localhost:5001
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 747-812-485
- * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+ * Detected change in '/home/user/dxfgen/backend/server.py', reloading
 Starting DXF Generator Chatbot on http://localhost:5001
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 747-812-485
- * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+ * Detected change in '/home/user/dxfgen/backend/server.py', reloading
 Starting DXF Generator Chatbot on http://localhost:5001
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 747-812-485
- * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+ * Detected change in '/home/user/dxfgen/backend/server.py', reloading
 Starting DXF Generator Chatbot on http://localhost:5001
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 747-812-485
- * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+ * Detected change in '/home/user/dxfgen/backend/server.py', reloading
 Starting DXF Generator Chatbot on http://localhost:5001
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 747-812-485
- * Detected change in '/home/adminho/dxfgen/backend/server.py', reloading
+ * Detected change in '/home/user/dxfgen/backend/server.py', reloading
 Starting DXF Generator Chatbot on http://localhost:5001
  * Restarting with stat
  * Debugger is active!

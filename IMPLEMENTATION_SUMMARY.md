@@ -163,7 +163,7 @@ These are nice-to-have features that can be added later. The core system is full
 - **Auto-Fixes Log**: Display applied fixes when auto-accept enabled
 - **Augmentation UI**: Input field for augmentation requests
 
-**Implementation Guide** (for `/home/adminho/dxfgen/frontend/templates/index.html`):
+**Implementation Guide** (for `/home/user/dxfgen/frontend/templates/index.html`):
 ```html
 <!-- Add to settings section -->
 <div class="settings-panel">
